@@ -24,7 +24,7 @@ public class QueryProcessor {
             String[] x = query.split(" ");
             for (int i = 0; i < x.length; i++) {
                 if (x[i].equals("multiplied")) {
-                    return Integer.parseInt(x[i - 1]) + Integer.parseInt(x[i + 2]) + "";
+                    return Integer.parseInt(x[i - 1]) * Integer.parseInt(x[i + 2]) + "";
                 }
             }
         } else { // TODO extend the programm here
