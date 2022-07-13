@@ -20,8 +20,13 @@ public class QueryProcessor {
                     return Integer.parseInt(x[i - 1]) + Integer.parseInt(x[i + 1]) + "";
                 }
             }
-        } else if (query.contains("multipl")) {
-            return "";
+        } else if (query.contains("multiplied")) {
+            String[] x = query.split(" ");
+            for (int i = 0; i < x.length; i++) {
+                if (x[i].equals("multiplied")) {
+                    return Integer.parseInt(x[i - 1]) + Integer.parseInt(x[i + 2]) + "";
+                }
+            }
         } else { // TODO extend the programm here
             return "";
         }
