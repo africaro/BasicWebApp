@@ -20,11 +20,12 @@ public class QueryProcessor {
                     return Integer.parseInt(x[i - 1]) + Integer.parseInt(x[i + 1]) + "";
                 }
             }
-            return "";
         } else if (query.contains("multipl")) {
-
+            return "";
         } else { // TODO extend the programm here
             return "";
         }
+        return "";
     }
+
 }
